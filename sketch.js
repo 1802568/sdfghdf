@@ -78,3 +78,13 @@ function mouseReleased(){
   rope.fly();
   hero.velocityX=5
 }
+async function getTime(){
+  var response= await fetch ("● http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+  var responseJSON= await response.json();
+  var datetime=responseJSON.datetime;
+  var hour= datetime.slice(11,13)
+  if(hour>=06&& hour<=18){
+    background("white")}
+  else{
+    background("black)
+}
