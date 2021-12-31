@@ -8,7 +8,7 @@ var box1, box2, box3,box4;
 var hero,rope,ground;
 
 function preload() {
-  
+  getTime()
 }
 
 function setup() {
@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+ 
   Engine.update(engine);
   ground.display();
   box1.display();
@@ -86,5 +86,5 @@ async function getTime(){
   if(hour>=06&& hour<=18){
     background("white")}
   else{
-    background("black)
+    background("black")}
 }
