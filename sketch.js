@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
- background("black)
+ background("black")
   Engine.update(engine);
   ground.display();
   box1.display();
