@@ -44,6 +44,10 @@ function setup() {
 
 function draw() {
  background("black")
+   if(hour>=06&& hour<=18){
+    background("white")}
+  else{
+    background("black")}
   Engine.update(engine);
   ground.display();
   box1.display();
@@ -83,8 +87,5 @@ async function getTime(){
   var responseJSON= await response.json();
   var datetime=responseJSON.datetime;
   var hour= datetime.slice(11,13)
-  if(hour>=06&& hour<=18){
-    background("white")}
-  else{
-    background("black")}
+ 
 }
